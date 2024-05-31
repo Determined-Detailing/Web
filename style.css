@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: blacklight;
+  overflow: auto;
+}
+
+/* ----- Comments are used to describe the code below it ----- */
+.container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* sections off the html coding and makes it smooth  */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background picture and properties*/
+.banner {
+  width: 100%;
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://i.postimg.cc/sxT7kPc1/Website-Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.PictureBanner {
+  width: 100%;
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://i.postimg.cc/t4pGLtyH/Simple-Blue-Gradient-Background-Graphics-3147589-1-580x387.jpg);
+  background-size: cover;
+}
+
+.banner2 {
+  width: 100%;
+  height: 140vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://i.postimg.cc/DfHL03sq/IMG-4946.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner3 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://i.postimg.cc/3NTyDQk6/Background-Car.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner4 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://i.postimg.cc/Fz7gYjhp/Auto-Detail-Being-Done-On-BMW-In-Denver-CO.jpgg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigational bar containing different contents*/
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+/* No explanation */
+.logo {
+  width: 220px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+/* Followed a tutorial for the navbar, pretty sure these are sub-catagories for it */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+}
+
+.navbar il li:hover:after {
+  width: 100%;
+}
+
+/* Title and other contents */
+/* Troubleshoot - 
+    Fixate its position on first page
+    Centering on page without margins? 
+*/
+.subBox1 {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.contentbox {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: center;
+  /* center X-axis */
+  align-items: center;
+  /* center Y-axis */
+  color: #fff;
+}
+
+/* content properties */
+.contentbox h1 {
+  font-size: 90px;
+  margin-top: 80px;
+  text-shadow: 5px 5px 5px black;
+}
+
+/* small text below content */
+.contentbox h3 {
+  margin: 20px auto;
+  font-weight: 60;
+  line-height: 35px;
+  font-size: 25px;
+}
+
+/* "View Packages" and "Schedule" Buttons */
+#mainbutton {
+  width: 250px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2x solid #009688;
+  background: translucent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#AfterNextBtn {
+  height: 50px;
+  width: 100px;
+}
+
+#AfterPrevBtn {
+  height: 50px;
+  width: 100px;
+  margin-left: 1350px;
+  /* temporary positioning for both buttons*/
+}
+
+/* For "About" tab  */
+/* Troubleshoot: Text boxes */
+.infoleft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin-top: 7%;
+  color: white;
+}
+
+.infoleft h1 {
+  font-size: 50px;
+  width: 100%;
+}
+
+.infoleft h2 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.inforight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin-top: 7%;
+  color: white;
+}
+
+.inforight h1 {
+  font-size: 50px;
+  width: 100%;
+}
+
+.inforight h2 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.informationbox {
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bothboxes1 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Contains the package boxes (box1, box2, box3) */
+.packagepage {
+  display: flex;
+  width: 100%;
+  height: 140vh;
+  overflow: hidden;
+}
+
+.boxholder {
+  width: 100%;
+  justify-content: center;
+  /* center  x-axis */
+  align-items: center;
+  /* center  y-axis */
+  display: flex;
+  margin-top: 6%;
+}
+
+.boxholder2 {
+  width: 100%;
+  justify-content: center;
+  /* center  x-axis */
+  align-items: center;
+  /* center  y-axis */
+  display: flex;
+  margin-top: 2%;
+}
+
+.Notice {
+  width: 100%;
+  align-items: center;
+  margin-top: 4%;
+  text-align: center;
+  color: white;
+}
+
+.Notice h1 {
+  font-size: 50px;
+}
+
+.Notice h2 {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+/* Boxes are the packages */
+.insidebox1 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.insidebox2 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.insidebox3 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.insidebox4 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.outsidebox1 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.outsidebox2 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.outsidebox3 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+.outsidebox4 {
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+  overflow: hidden;
+}
+
+/* For policy tab*/
+.policyleft {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin-top: 8%;
+  color: white;
+}
+
+.policyleft h1 {
+  font-size: 50px;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 38%;
+}
+
+.policyleft h2 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  font-weight: 100;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.policyright {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin-top: 8%;
+  color: white;
+}
+
+.policyright h1 {
+  font-size: 50px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.policyright h2 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  font-weight: 100;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.policybox {
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bothboxes2 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image Section*/
+.subBox2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ImageText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.ImageText h1 {
+  width: 250px;
+  text-align: center;
+}
+
+.ImageText h2 {
+  width: 250px;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* Image Carousel */
+/* Buttons for Carousel are towards top*/
+.InlineBoxes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  overflow-y: hidden;
+}
+
+.Inner-carousel img {
+  /* All images within box*/
+  overflow: visible;
+  width: 100%;
+  object-fit: fill;
+  height: 100vh;
+}
+
+.carousel-container1 {
+  width: 25%;
+  margin: auto;
+  border: 5px solid black;
+}
+
+.carousel-container2 {
+  width: 25%;
+  margin: auto;
+  border: 5px solid black;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+/* Contact footer*/
+.FooterBox {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
