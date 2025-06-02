@@ -170,7 +170,7 @@
   /* temporary positioning for both buttons*/
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .contentbox h1{
     font-size: 50px;
   }
@@ -213,7 +213,7 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .bothboxes1 {
     flex-direction: column;
   }
@@ -367,7 +367,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .boxholder, .boxholder2 {
     flex-direction: column;
     margin-top: 5%;
@@ -433,7 +433,7 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .bothboxes2 {
     flex-direction: column;
   }
