@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
 }
-
+ 
 /* background picture and properties*/
 .banner {
   width: 100%;
@@ -170,9 +170,17 @@
   /* temporary positioning for both buttons*/
 }
 
+@media screen and (max-width: 600px) {
+  .contentbox h1{
+    font-size: 50px;
+  }
+  .contentbox h3{
+    font-size: 18px;
+  }
+}
 /* For "About" tab  */
 /* Troubleshoot: Text boxes */
-.infoleft {
+.infoleft, .inforight{
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -181,34 +189,12 @@
   color: white;
 }
 
-.infoleft h1 {
+.infoleft h1, .inforight h1 {
   font-size: 50px;
   width: 100%;
 }
 
-.infoleft h2 {
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-  font-weight: 100;
-  line-height: 30px;
-}
-
-.inforight {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  text-align: center;
-  margin-top: 7%;
-  color: white;
-}
-
-.inforight h1 {
-  font-size: 50px;
-  width: 100%;
-}
-
-.inforight h2 {
+.infoleft h2, .inforight h2{
   margin-top: 30px;
   margin-left: 10%;
   width: 80%;
@@ -227,6 +213,20 @@
   flex-direction: row;
 }
 
+@media screen and (max-width: 600px) {
+  .bothboxes1 {
+    flex-direction: column;
+  }
+  .infoleft, .inforight{
+    width: 100%;
+  }
+  .infoleft h1, .inforight h1{
+    font-size: 30px;
+  }
+  .infoleft h2, .inforight h2{
+    font-size: 20px;
+  }
+}
 /* Contains the package boxes (box1, box2, box3) */
 .packagepage {
   display: flex;
@@ -235,17 +235,7 @@
   overflow: hidden;
 }
 
-.boxholder {
-  width: 100%;
-  justify-content: center;
-  /* center  x-axis */
-  align-items: center;
-  /* center  y-axis */
-  display: flex;
-  margin-top: 6%;
-}
-
-.boxholder2 {
+.boxholder, .boxholder2 {
   width: 100%;
   justify-content: center;
   /* center  x-axis */
@@ -377,6 +367,19 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 600px) {
+  .boxholder, .boxholder2 {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .Notice h1{
+    font-size: 30px;
+  }
+  .Notice h2{
+    font-size: 20px;
+  }
+}
+
 /* For policy tab*/
 .policyleft {
   display: inline-flex;
@@ -394,7 +397,7 @@
   margin-left: 38%;
 }
 
-.policyleft h2 {
+.policyleft h2, .policyright h2 {
   margin-top: 30px;
   margin-left: 10%;
   width: 80%;
@@ -419,15 +422,6 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.policyright h2 {
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-  font-weight: 100;
-  line-height: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .policybox {
   height: 90vh;
   width: 100%;
@@ -439,6 +433,20 @@
   flex-direction: row;
 }
 
+@media screen and (max-width: 600px) {
+  .bothboxes2 {
+    flex-direction: column;
+  }
+  .policyleft, .policyright {
+    width: 100%;
+  }
+  .policyleft h1, .policyright h1{
+    font-size: 30px;
+  }
+  .policyleft h2, .policyright h2{
+    font-size: 20px;
+  }
+}
 /* Image Section*/
 .subBox2 {
   display: flex;
