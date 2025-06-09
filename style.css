@@ -367,7 +367,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .boxholder, .boxholder2 {
     flex-direction: column;
     margin-top: 5%;
@@ -378,8 +378,13 @@
   .Notice h2{
     font-size: 20px;
   }
+  .packagepage{
+    height: 280vh;
+  }
+  .banner2{
+    height: 280vh;
+  }
 }
-
 /* For policy tab*/
 .policyleft {
   display: inline-flex;
