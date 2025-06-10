@@ -330,10 +330,10 @@ html{
     font-size: 20px;
   }
   .packagepage{
-    height: 320vh;
+    height: 360vh;
   }
   .banner2{
-    height: 320vh;
+    height: 360vh;
   }
   .insidebox, .outsidebox{
     flex-direction: column;
@@ -410,10 +410,10 @@ html{
     font-size: 20px;
   }
   .policybox{
-    height: 180vh;
+    height: 240vh;
   }
   .banner4{
-    height: 180vh;
+    height: 240vh;
   }
 }
 /* Image Section*/
