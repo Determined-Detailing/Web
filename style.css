@@ -110,6 +110,8 @@
   .navbar ul li{
     display: block;
     list-style: none;
+    margin: 10px 0;
+    padding: 0px 50px;
   }
 }
 /* Title and other contents */
@@ -236,7 +238,7 @@
     font-size: 20px;
   }
   .informationbox{
-    height: 120vh;
+    height: 180vh;
   }
 }
 /* Contains the package boxes */
@@ -310,10 +312,10 @@
     font-size: 20px;
   }
   .packagepage{
-    height: 320vh;
+    height: 360vh;
   }
   .banner2{
-    height: 320vh;
+    height: 360vh;
   }
   .insidebox, .outsidebox{
     flex-direction: column;
@@ -389,7 +391,7 @@
     font-size: 20px;
   }
   .policybox{
-    height: 120vh;
+    height: 180vh;
   }
 }
 /* Image Section*/
