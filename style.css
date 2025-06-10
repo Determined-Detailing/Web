@@ -4,7 +4,9 @@
   font-family: blacklight;
   overflow: auto;
 }
-
+html{
+  height: -webkit-fill-available;
+}
 /* ----- Comments are used to describe the code below it ----- */
 .container {
   overflow-y: scroll;
@@ -18,7 +20,7 @@
   justify-content: center;
   align-items: center;
 }
- 
+
 /* background picture and properties*/
 .banner {
   width: 100%;
@@ -70,6 +72,7 @@
   position: fixed;
 }
 
+
 /* No explanation */
 .logo {
   width: 220px;
@@ -77,7 +80,7 @@
   margin-left: 70px;
 }
 
-/* Followed a tutorial for the navbar, pretty sure these are sub-catagories for it */
+/* Navbar sub-categories */
 .navbar ul li {
   list-style: none;
   display: inline-block;
@@ -105,13 +108,17 @@
 
 @media screen and (max-width: 700px){
   .navbar{
-    padding: 15px 0;
+    padding: 5px 0;
+    background-color: rgba(0,0,0,0);
   }
   .navbar ul li{
-    display: block;
-    list-style: none;
-    margin: 10px 0;
-    padding: 0px 50px;
+    display: none;
+  }
+  .logo{
+    width: 100px;
+    padding: 10px;
+    margin-left: 0;
+    display: flex;
   }
 }
 /* Title and other contents */
@@ -183,10 +190,17 @@
 
 @media screen and (max-width: 700px) {
   .contentbox h1{
-    font-size: 50px;
+    font-size: 45px;
   }
   .contentbox h3{
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 25px;
+  }
+  #mainbutton{
+    padding: 13px 0;
+    border-radius: 25px;
+    margin: 30px;
   }
 }
 /* For "About" tab  */
@@ -243,6 +257,7 @@
   .banner3{
     height: 180vh;
   }
+
 }
 /* Contains the package boxes */
 .packagepage {
@@ -315,10 +330,10 @@
     font-size: 20px;
   }
   .packagepage{
-    height: 360vh;
+    height: 320vh;
   }
   .banner2{
-    height: 360vh;
+    height: 320vh;
   }
   .insidebox, .outsidebox{
     flex-direction: column;
@@ -327,6 +342,7 @@
     font-size: 15px;
   }
 }
+
 /* For policy tab*/
 .policyleft {
   display: inline-flex;
