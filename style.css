@@ -103,6 +103,15 @@
   width: 100%;
 }
 
+@media screen and (max-width: 700px){
+  .navbar{
+    padding: 15px 0;
+  }
+  .navbar ul li{
+    display: block;
+    list-style: none;
+  }
+}
 /* Title and other contents */
 /* Troubleshoot - 
     Fixate its position on first page
@@ -226,6 +235,9 @@
   .infoleft h2, .inforight h2{
     font-size: 20px;
   }
+  .informationbox{
+    height: 120vh;
+  }
 }
 /* Contains the package boxes */
 .packagepage {
@@ -298,10 +310,10 @@
     font-size: 20px;
   }
   .packagepage{
-    height: 280vh;
+    height: 320vh;
   }
   .banner2{
-    height: 280vh;
+    height: 320vh;
   }
   .insidebox, .outsidebox{
     flex-direction: column;
@@ -375,6 +387,9 @@
   }
   .policyleft h2, .policyright h2{
     font-size: 20px;
+  }
+  .policybox{
+    height: 120vh;
   }
 }
 /* Image Section*/
