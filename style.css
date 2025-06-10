@@ -170,7 +170,7 @@
   /* temporary positioning for both buttons*/
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .contentbox h1{
     font-size: 50px;
   }
@@ -213,7 +213,7 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .bothboxes1 {
     flex-direction: column;
   }
@@ -363,7 +363,7 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .bothboxes2 {
     flex-direction: column;
   }
