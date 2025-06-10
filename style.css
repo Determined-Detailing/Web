@@ -240,6 +240,9 @@
   .informationbox{
     height: 180vh;
   }
+  .banner3{
+    height: 180vh;
+  }
 }
 /* Contains the package boxes */
 .packagepage {
@@ -391,6 +394,9 @@
     font-size: 20px;
   }
   .policybox{
+    height: 180vh;
+  }
+  .banner4{
     height: 180vh;
   }
 }
