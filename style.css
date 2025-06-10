@@ -227,7 +227,7 @@
     font-size: 20px;
   }
 }
-/* Contains the package boxes (box1, box2, box3) */
+/* Contains the package boxes */
 .packagepage {
   display: flex;
   width: 100%;
@@ -237,11 +237,9 @@
 
 .boxholder, .boxholder2 {
   width: 100%;
-  justify-content: center;
-  /* center  x-axis */
-  align-items: center;
-  /* center  y-axis */
-  display: flex;
+  justify-content: center;  /* center  x-axis */
+  align-items: center;/* center  y-axis */
+  display: flex;   
   margin-top: 2%;
 }
 
@@ -263,109 +261,30 @@
 }
 
 /* Boxes are the packages */
-.insidebox1 {
+.insidebox{
   margin: 15px;
   width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
+  height: 450px;
   text-align: center;
   font-size: 20px;
   background-color: rgba(240, 240, 240, 0.8);
   overflow: hidden;
+  flex-direction: row;
 }
 
-.insidebox2 {
+
+
+.outsidebox{
   margin: 15px;
   width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
+  height: 450px;
   text-align: center;
   font-size: 20px;
   background-color: rgba(240, 240, 240, 0.8);
   overflow: hidden;
+  flex-direction: row;
 }
 
-.insidebox3 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
-
-.insidebox4 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
-
-.outsidebox1 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
-
-.outsidebox2 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
-
-.outsidebox3 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
-
-.outsidebox4 {
-  margin: 15px;
-  width: 300px;
-  height: 400px;
-  box-shadow: -1px 0 10px #000000;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgba(240, 240, 240, 0.8);
-  overflow: hidden;
-}
 
 @media screen and (max-width: 700px) {
   .boxholder, .boxholder2 {
@@ -383,6 +302,12 @@
   }
   .banner2{
     height: 280vh;
+  }
+  .insidebox, .outsidebox{
+    flex-direction: column;
+    height: 300px;
+    width: 225px;
+    font-size: 15px;
   }
 }
 /* For policy tab*/
